@@ -8,22 +8,30 @@
     <style>
         html{font-family: monospace;font-weight: bold; font-size: 1em;}
         .element{text-align: center;}
-        input {width: 20em;  height: 5em;}
-        input[type=button]{background-color: LightGray;}
+        input,button {width: 20em;  height: 5em; margin:5px;}
+        input[type=button] ,button{background-color: LightGray;}
         #output{text-align: center;}
+        
     </style>
 	<script src = "script/ajax_callback.js" defer></script>
 	<script src = "script/control.js" defer></script>
+  
   </head>
   <body>
 	<div class = "element">
 				JSON text	
 	</div>
 	<div class = "element">
+    <h2>vul hier uw naam:</h2><br>
+    <input type=text" id ="textInput2" placeholder="naam"><br>
+    <h2>uw boodschap:</h2><br>
 		<input type=text" id ="textInput1" placeholder="hier text"><br>
-    <input type=text" id ="textInput2" placeholder="hier jouw naam"><br>
-    <input type="button" id ="button1" value="button">
+    <input type="button" id ="button1" value="submit">
 	</div>
+  <br>
+  <div class = "element">
+    <button name="click" onclick="reset();">reset</button>
+  </div>
   <div id="output"></div>
-  </body>
+  </body> 
 </html>
